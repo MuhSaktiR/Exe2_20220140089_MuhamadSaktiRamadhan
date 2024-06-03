@@ -1,0 +1,79 @@
+body {
+    font-family: "Delius", cursive;
+    margin: 0;
+    display: flex;
+}
+
+.navbar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bb3f3f;
+    padding-top: 20px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #bb3f3f;
+}
+
+.icon-link {
+    margin-bottom: 150px; /* Space between icon and first link */
+}
+
+.main-content {
+    margin-left: 210px; /* Same as the width of the navbar */
+    padding: 20px;
+    width: calc(100% - 240px); /* Adjusted width */
+    min-height: 100vh; /* Ensure full height */
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    height: 100vh; /* Mengatur tinggi agar mengambil seluruh viewport */
+}
+
+.box {
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #bb3f3f;
+    color: white;
+}
+
+.main-content p {
+    text-align: center;
+}
+
+.main-content a {
+    display: inline-block; /* Agar link dapat memiliki ukuran box */
+    text-decoration: none;
+    text-align: center;
+    background-color: #bb3f3f; 
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px; /* Menambahkan padding di dalam box */
+    margin: 10px; /* Menambahkan margin di sekitar box */
+    border: 2px solid #bb3f3f; /* Menambahkan border untuk menonjolkan kotak */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek 3D */
+}
+
+/* Add higher specificity */
+.main-content a:hover {
+    background-color: white !important;
+    color: #bb3f3f !important;
+}

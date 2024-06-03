@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sakti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    <style>
+        .jenis h2 {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .carousel {
+            width: 70%; /* Lebar carousel 80% dari lebar layar */
+            margin: 20px auto; /* Posisi tengah */
+        }
+
+        .carousel-cell {
+            width: 100%; /* Lebar setiap cell 100% dari carousel */
+            height: auto; /* Tinggi menyesuaikan ukuran gambar */
+            margin-right: 100px; /* Jarak antar cell */
+            border-radius: 100px; /* Sudut rounded */
+            overflow: hidden; /* Menghindari overflow */
+        }
+
+        .carousel-cell img {
+            width: 100%; /* Lebar gambar 100% dari cell */
+            height: auto; /* Tinggi menyesuaikan ukuran gambar */
+            display: block; /* Agar gambar tampil sesuai blok */
+            object-fit: cover; /* Agar gambar tidak terdistorsi */
+        }
+
+        .sejarah {
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .sejarah-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .sejarah h2 {
+            text-align: center;
+        }
+
+        .sejarah-video {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        .sejarah-video video {
+            width: 80%;
+            height: 80%;
+            border-radius: 40px;
+            object-fit: cover;
+            margin-left: 70px;
+        }
+
+        .jenis-mobil {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .jenis-mobil-card {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .jenis-mobil-card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="icon-link">
+            <i class="fas fa-car jepang"> Mobil Starz</i>
+        </a>
+        <a href="utama.html">
+            <i class="fas fa-home"> Beranda</i>
+        </a>
+        <a href="sejarah.html">
+            <i class="fas fa-history"> Sejarah</i>
+        </a>
+        <a href="jenis.html">
+            <i class="fas fa-bolt"> Jenis</i>
+        </a>
+        <a href="member.html">
+            <i class="fas fa-users"> Member</i>
+        </a>
+    </div>
+    <div class="main-content">
+        <h1 class="box">Selamat Datang di Website Kami</h1>
+        <p>Kami Membahas seputar mobil terkece dan terkeren didunia</p>
+
+        <div class="carousel" data-flickity='{ "autoPlay": 3000, "wrapAround": true, "pauseAutoPlayOnHover": false }'>
+            <div class="carousel-cell"><img src="mobil5.jpg" alt="Car 1"></div>
+            <div class="carousel-cell"><img src="mobil3.jpg" alt="Car 2"></div>
+            <div class="carousel-cell"><img src="mobil7.jpg" alt="Car 3"></div>
+        </div>
+
+
+        <!-- Sejarah singkat -->
+        <div class="sejarah">
+            <div class="sejarah-text">
+                <h2>Sejarah Mobil</h2>
+                <p>Mobil pertama kali ditemukan pada tahun 1886 oleh Karl Benz. Ini adalah titik awal dari revolusi transportasi global yang memungkinkan mobilitas manusia secara cepat dan efisien.</p>
+                <p>Sejak itu, mobil telah mengalami perkembangan pesat dalam desain, teknologi, dan performa. Hari ini, mobil telah menjadi bagian tak terpisahkan dari kehidupan modern.</p>
+            </div>
+            <div class="sejarah-video">
+                <video controls autoplay loop muted>
+                    <source src="mobildrift.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Jenis Mobil -->
+        <div class="jenis">
+            <h2>Jenis Mobil</h2>
+            <div class="jenis-mobil">
+            <div class="jenis-mobil-card">
+                <img src="mobilpertama.jpg" alt="Kereta Mobil">
+                <h3>Kereta Mobil</h3>
+                <p>Merupakan mobil beroda tiga yang pertama kali ditemukan</p>
+            </div>
+            <div class="jenis-mobil-card">
+                <img src="mobilkedua.jpg" alt="Mobil Pertama">
+                <h3>Mobil Benz Patent Motor Car</h3>
+                <p>Mobil pertama yang ditemukan pada tahun 1886</p>
+            </div>
+            <div class="jenis-mobil-card">
+                <img src="mobilketiga.jpg" alt="Mobil Masa Kini">
+                <h3>Mobil Masa Kini</h3>
+                <p>Mobil dengan teknologi terbaru dan desain modern</p>
+            </div>
+            <div class="jenis-mobil-card">
+                <img src="mobilkeempat.jpg" alt="Mobil Masa Depan">
+                <h3>Mobil Masa Depan</h3>
+                <p>Perkembangan mobil dalam beberapa tahun kedepan</p>
+            </div>
+        </div>
+        
+        <a href="member.html">
+            <h1>Mari Bergabung dengan Kami!</h1>
+        </a>
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+
+    <script>
+        // Initialize Flickity Carousel
+        var elem = document.querySelector('.carousel');
+        var flkty = new Flickity(elem, {
+            // options
+            cellAlign: 'left',
+            contain: true,
+            wrapAround: true,
+            autoPlay: 3000, // Autoplay interval in milliseconds
+            pauseAutoPlayOnHover: false // Pause autoplay on hover
+        });
+    </script>
+</body>
+</html>
